@@ -1,0 +1,46 @@
+.post-form-container{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.post-form-container form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+form h3{
+    font-size: 1.3rem;
+    color: #343a40;
+    margin-bottom: 1.3rem;
+}
+
+form input, form textarea{
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #adb5bd;
+}
+
+form textarea{
+    height: 150px;
+    resize: vertical;
+}
+
+form .button{
+    margin: 0.5rem auto;
+    padding: 0.5rem 3rem;
+    background: #f3d9fa;
+    border: 2px solid #cc5de8;
+}
+
+form .button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .post-form-container{
+        max-width: min(600px,90%);
+    }
+}
